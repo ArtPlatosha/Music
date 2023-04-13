@@ -43,6 +43,13 @@ section {
 	padding: 3rem 7%;
 }
 
+.heading {
+	font-size: 4rem;
+	margin: 4rem 0;
+	color: var(--primary-color);
+	text-align: center;
+}
+
 .btn {
 	margin-top: 1rem;
 	background-color: var(--primary-color);
@@ -145,4 +152,53 @@ section {
 	text-transform: uppercase;
 	letter-spacing: 0.5rem;
 	padding-bottom: 2rem;
+}
+
+.about .row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 3rem;
+}
+
+.about .row .content {
+	flex: 1 1 40rem
+}
+
+.about .row .content h3 {
+	font-size: 2.5rem;
+	color: var(--primary-color);
+	padding: 1rem 0;
+}
+
+.about .row .content p {
+	font-size: 1.4rem;
+	color: var(--black);
+	padding: 1rem 0;
+	line-height: 2;
+}
+
+.about ul li {
+	font-size: 1.7rem;
+	color: var(--main-color);
+	padding-top: 1.5rem;
+}
+
+.about ul li i {
+	font-size: 2rem;
+	color: var(--primary-color);
+	padding-right: 1rem;
+}
+
+.about .row .content .btn {
+	margin: 3rem 0;
+}
+
+.about .row .image {
+	flex: 1 1 30rem;
+}
+
+.about .row .image img {
+	width: 100%;
+	height: 100%;
 }
