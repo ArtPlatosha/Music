@@ -6,11 +6,11 @@ $ (document).ready(function() {
 		var filter = $(this).attr('data-filter')
 
 		if(filter == 'all') {
-			$('.image').show(400);
+			$('.gallery .image').show(400);
 		}
 		else {
-			$('.image').not('.'+filter).hide(200);
-			$('.image').filter('.'+filter).show(200)
+			$('.gallery .image').not('.'+filter).hide(200);
+			$('.gallery .image').filter('.'+filter).show(200)
 		}
 	});
 
