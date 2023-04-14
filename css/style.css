@@ -271,3 +271,73 @@ section {
 	font-size: 2.5rem;
 	color: var(--black);
 }
+
+.shop .box-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	gap: 2rem;
+}
+
+.shop .box-container .box {
+	background-color: #fff;
+	border-radius: 0.5rem;
+	box-shadow: var(--box-shadow);
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+
+.shop .box-container .box .image {
+	position: relative;
+	overflow: hidden;
+}
+
+.shop .box-container .box .image img {
+	width: 100%;
+}
+
+.shop .box-container .box .image .share {
+	position: absolute;
+	bottom: -10rem;
+	left: 0;
+	right: 0;
+	padding: 2rem;
+	background-color: rgba(242,242,242,.6);
+}
+
+.shop .box-container .box:hover .image .share {
+	bottom: 0;
+}
+
+.shop .box-container .box .image .share a {
+	height: 4rem;
+	width: 4rem;
+	line-height: 4rem;
+	font-size: 2rem;
+	margin: 0 1rem;
+	color: #fff;
+	background-color: var(--primary-color);
+	border-radius: .5rem;
+}
+
+.shop .box-container .box .image .share a:hover {
+	color: var(--primary-color);
+	background-color: #fff;
+}
+
+.shop .box-container .box .content {
+	padding: 2rem;
+	padding-top: 1rem;
+	align-items: center;
+}
+
+.shop .box-container .box .content h3 {
+	font-size: 2rem;
+	color: var(--black);
+}
+
+.shop .box-container .box .content h5 {
+	font-size: 1.7rem;
+	line-height: 2;
+	color: #777;
+}
