@@ -509,3 +509,44 @@ section {
 	height: 15rem;
 	resize: none;
 }
+
+.subscribe {
+	background-color: #f0f4ff;
+}
+
+.subscribe .row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 3rem;
+}
+
+.subscribe .row .content {
+	flex: 1 1 30rem;
+}
+
+.subscribe .row .content p {
+	font-size: 4rem;
+	font-weight: 700;
+	color: var(--primary-color);
+}
+
+.subscribe .row .inputBox {
+	flex: 1 1 50rem;
+}
+
+.subscribe .row .inputBox .email {
+	padding: 1.2rem;
+	width: 60%;
+	border-radius: 5rem;
+	font-size: 1.4rem;
+	background: none;
+	color: var(--black);
+	text-transform: none;
+	border: .1rem solid var(--primary-color);
+}
+
+.subscribe .row .inputBox .btn {
+	margin-left: 2rem;
+	cursor: pointer;
+}
