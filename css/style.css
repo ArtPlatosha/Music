@@ -341,3 +341,58 @@ section {
 	line-height: 2;
 	color: #777;
 }
+
+.gallery {
+	background-color: #f0f4ff;
+}
+
+.gallery .controls {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem 0;
+}
+
+.gallery .controls .button {
+	height: 4rem;
+	width: 16rem;
+	background-color: #fff;
+	color: var(--primary-color);
+	font-size: 2rem;
+	line-height: 4rem;
+	cursor: pointer;
+	margin: 1rem;
+	box-shadow: var(--box-shadow);
+	text-align: center;
+}
+
+.gallery .controls .button.active {
+	background-color: var(--main-color);
+	color: #fff;
+}
+
+.gallery .box-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.gallery .box-container .image {
+	height: 25rem;
+	width: 35rem;
+	overflow: hidden;
+	box-shadow: var(--box-shadow);
+}
+
+.gallery .box-container .image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.gallery .box-container .image:hover img {
+	transform: scale(1.1);
+}
