@@ -396,3 +396,63 @@ section {
 .gallery .box-container .image:hover img {
 	transform: scale(1.1);
 }
+
+.blog .box-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	gap: 1.5rem;
+}
+
+.blog .box-container .box {
+	box-shadow: var(--box-shadow);
+}
+
+.blog .box-container .box .image {
+	height: 30rem;
+	width: 100%;
+	overflow: hidden;
+}
+
+.blog .box-container .box .image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.blog .box-container .box:hover .image img {
+	transform: scale(1.2);
+}
+
+.blog .box-container .box .content {
+	padding: 3rem 3.5rem;
+}
+
+.blog .box-container .box .content h3 {
+	font-size: 2.2rem;
+	color: var(--black);
+}
+
+.blog .box-container .box .content .icons {
+	padding-top: 1.7rem;
+}
+
+.blog .box-container .box .content .icons a {
+	font-size: 1.4rem;
+	color: #444;
+}
+
+.blog .box-container .box .content .icons a:hover {
+	color: var(--primary-color);
+}
+
+.blog .box-container .box .content .icons a i {
+	color: var(--primary-color);
+	padding-right: .5rem;
+}
+
+.blog .box-container .box .content p {
+	font-size: 1.4rem;
+	color: var(--black);
+	line-height: 2;
+	padding: 1rem 0;
+}
