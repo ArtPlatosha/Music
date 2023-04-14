@@ -550,3 +550,85 @@ section {
 	margin-left: 2rem;
 	cursor: pointer;
 }
+
+.footer {
+	background-color: #eee5e6;
+	text-align: center;
+}
+
+.footer .share {
+	padding: 1rem 0;
+}
+
+.footer .share a {
+	height: 5rem;
+	width: 5rem;
+	line-height: 5rem;
+	font-size: 2rem;
+	color: var(--primary-color);
+	border: .1rem solid var(--primary-color);
+	margin: .3rem;
+	border-radius: 50%;
+}
+
+.footer .share a:hover {
+	color: #fff;
+	background-color: var(--primary-color);
+}
+
+.footer .credit {
+	font-size: 2rem;
+	color: var(--black);
+	padding: 1.5rem;
+}
+
+@media (max-width: 991px) {
+	html {
+		font-size: 55%;
+	}
+
+	.header {
+		padding: 2rem 3rem;
+	}
+
+	section {
+		padding: 3rem;
+	}
+}
+
+@media (max-width: 768px) {
+	#menu {
+		display: inline-block;
+	}
+	
+	.header .navbar {
+		position: absolute;
+		top: 110%;
+		right: -110%;
+		width: 30rem;
+		box-shadow: var(--box-shadow);
+		border-radius: .5rem;
+		background-color: #fff;
+	}
+
+	.header .navbar.active {
+		right: 2rem;
+		transition: .4s linear;
+	}
+	
+	.header .navbar a {
+		font-size: 2rem;
+		margin: 2rem 2.5rem;
+		display: block;
+	}
+
+	.home .content h3 {
+		font-size: 5rem;
+	}
+}
+
+@media (max-width: 450px) {
+	html {
+		font-size: 50%;
+	}
+}
